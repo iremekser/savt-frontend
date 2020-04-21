@@ -1,6 +1,8 @@
 import axios from "axios";
 const API = axios.create({
-  baseURL:"http://localhost:8080",
+  baseURL: process.env.NODE_ENV === "production"
+    ? process.env.VUE_APP_API_URL_PRODUCTION
+    : process.env.VUE_APP_API_URL_DEVELOPMENT,
   timeout: 30000,
   headers: {
     "Content-Type": "application/json"
