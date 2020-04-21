@@ -1,32 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <b-row>
+      <b-col xs="0" sm="0" md="3" lg="3" class="p-4 ">
+        <h5 class="ml-3" >Menü</h5>
+        <div>
+          <b-button href="/" variant="link">Anasayfa</b-button>
+        </div>
+        <div>
+          <b-button href="/my-reservations" variant="link">Rezervasyonlarım</b-button>
+        </div>
+      </b-col>
+      <b-col xs="12" sm="12" md="9" lg="9">
+        <b-row>
+          <b-col xs="12" sm="12" md="10" lg="10">
+            <router-view class="m-3" />
+          </b-col>
+        </b-row>
+      </b-col>
+    </b-row>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
