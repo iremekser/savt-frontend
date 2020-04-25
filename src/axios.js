@@ -1,8 +1,8 @@
 import axios from "axios";
 const API = axios.create({
   baseURL: process.env.NODE_ENV === "production"
-    ? process.env.VUE_APP_API_URL_PRODUCTION
-    : process.env.VUE_APP_API_URL_DEVELOPMENT,
+    ? "https://savt-backend.herokuapp.com/"
+    : "http://localhost:8080/",
   timeout: 30000,
   headers: {
     "Content-Type": "application/json"
