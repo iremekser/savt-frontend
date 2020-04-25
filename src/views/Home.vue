@@ -32,7 +32,6 @@ export default {
       rooms: null
     };
   },
-  methods: {},
   async created() {
     const rooms = await API.get("/v1/rooms");
     this.rooms = rooms.data.listedRoom;

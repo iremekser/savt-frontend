@@ -12,6 +12,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.config.productionTip = false;
 
+import contenteditable from 'vue-contenteditable'
+Vue.use(contenteditable)
+
 new Vue({
   router,
   store,

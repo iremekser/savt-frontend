@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Reservation from "../views/Reservation.vue";
 import MyReservations from "../views/MyReservations.vue";
+import Admin from "../views/Admin.vue";
+import Inventory from "../views/Inventory.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +23,16 @@ const routes = [
     path: "/my-reservations",
     name: "myReservations",
     component: MyReservations
+  },
+  {
+    path: "/admin",
+    name: "admin",
+    component: Admin
+  },
+  {
+    path: "/admin/inventory",
+    name: "inventory",
+    component: Inventory
   }
 ];
 

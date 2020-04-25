@@ -9,6 +9,9 @@
         <div>
           <b-button href="/my-reservations" variant="link">Rezervasyonlarım</b-button>
         </div>
+        <div>
+          <b-button href="/admin" variant="link">Envanter</b-button>
+        </div>
       </b-col>
       <b-col xs="12" sm="12" md="9" lg="9">
         <b-row>
