@@ -134,7 +134,7 @@ export default {
       hasCarpark: false,
       startDate: new Date(),
       endDate: null,
-      step: 2,
+      step: 1,
       fullName: null,
       email: null,
       mobile: null,
