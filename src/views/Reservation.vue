@@ -86,11 +86,7 @@
       <b-row>
         <b-col cols="auto">
           <b-form-checkbox
-            id="checkbox-1"
             v-model="status"
-            name="checkbox-1"
-            value="accepted"
-            unchecked-value="not_accepted"
           ></b-form-checkbox>
         </b-col>
         <b-col cols="auto">
